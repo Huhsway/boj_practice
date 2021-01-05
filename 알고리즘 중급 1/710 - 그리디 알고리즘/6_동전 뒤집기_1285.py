@@ -6,15 +6,15 @@ coins = [list(map(str,list(input()))) for _ in range(n)]
 
 answer = 21e8
 
-def change(arr, s):
+def change(coins, s):
 
     for i in range(n):
-        if arr[i][s] == 'H':
-            arr[i][s] = 'T'
+        if coins[i][s] == 'H':
+            coins[i][s] = 'T'
         else:
-            arr[i][s] = 'H'
+            coins[i][s] = 'H'
 
-    return arr
+    return coins
 
 def flip(s, e, coins):
 
