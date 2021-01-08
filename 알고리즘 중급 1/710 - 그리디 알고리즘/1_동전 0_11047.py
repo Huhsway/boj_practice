@@ -8,8 +8,8 @@ for i in range(n):
     coins.append(coin)
 
 for i in range(n-1, -1, -1):
-    if k // coins[i] > 0:
-        result += (k // coins[i])
-        k %= coins[i]
+    result += (k // coins[i])
+    k %= coins[i]
+
 
 print(result)
