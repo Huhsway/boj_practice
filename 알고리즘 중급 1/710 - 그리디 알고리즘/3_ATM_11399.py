@@ -2,11 +2,9 @@ n = int(input())
 times = list(map(int,input().split()))
 
 q = []
+
 for i in range(n):
-    temp = []
-    temp.append(times[i])
-    temp.append(i+1)
-    q.append(temp)
+    q.append([times[i], i+1])
 
 q.sort()
 result = 0
